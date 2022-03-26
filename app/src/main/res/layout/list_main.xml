@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="355dp"
+    android:layout_height="165dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_design"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="20dp"
+    android:id="@+id/list_Cardview"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:orientation="horizontal"
+        android:background="@drawable/card_design"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="165dp"
+            android:src="@drawable/kind"
+            android:id="@+id/list_image"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/list_car_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audi R7"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:src="@drawable/ic_baseline_favorite_24"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="6dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/car_list_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                />
+            <TextView
+                android:id="@+id/list_car_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5(342 reviews)"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:drawableLeft="@drawable/star"
+                />
+
+            <TextView
+                android:id="@+id/list_pay"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/txt_design"
+                android:padding="5dp"
+                android:text="$12000/day"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

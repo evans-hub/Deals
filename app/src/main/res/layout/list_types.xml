@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:id="@+id/phone_Cardview"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:id="@+id/background_color"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/car_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Audi"
+            android:gravity="center"
+            android:textColor="#1a2762"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
